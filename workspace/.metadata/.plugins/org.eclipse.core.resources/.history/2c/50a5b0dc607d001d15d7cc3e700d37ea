@@ -1,6 +1,6 @@
 package com.cybertools.collegeServlet;
 
-//@author JAPV
+//@author jpjar
 
 import com.cybertools.collegeController.*;
 import com.cybertools.collegeModel.ModelTeachers;

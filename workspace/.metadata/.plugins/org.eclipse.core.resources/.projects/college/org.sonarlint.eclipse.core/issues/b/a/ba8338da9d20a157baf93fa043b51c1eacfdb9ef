@@ -1,0 +1,23 @@
+
+Š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ì¤÷­ûÿÿÿÿHRMINORZ
+CODE_SMELL
+i	java:S106Q"9Replace this use of System.out or System.err by a logger.(º÷àÑıÿÿÿÿH™RMAJORZ
+CODE_SMELL
+d	java:S106N"9Replace this use of System.out or System.err by a logger.(ó¸†¢H˜RMAJORZ
+CODE_SMELL
+i	java:S106"9Replace this use of System.out or System.err by a logger.(º÷àÑıÿÿÿÿH”RMAJORZ
+CODE_SMELL
+i	java:S106M"9Replace this use of System.out or System.err by a logger.(¤¸¤ûÿÿÿÿH—RMAJORZ
+CODE_SMELL
+{
+java:S2095'"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(É½ÕˆøÿÿÿÿHRBLOCKERZBUG
+{
+java:S20959"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(É½ÕˆøÿÿÿÿH’RBLOCKERZBUG
+n
+java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(¦±Á”H‘RBLOCKERZBUG
+i	java:S1060"9Replace this use of System.out or System.err by a logger.(º÷àÑıÿÿÿÿH•RMAJORZ
+CODE_SMELL
+i	java:S106B"9Replace this use of System.out or System.err by a logger.(º÷àÑıÿÿÿÿH–RMAJORZ
+CODE_SMELL
+‚
+java:S2095K"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(É½Õˆøÿÿÿÿ8Ôµ¶ÊÑ0HœRBLOCKERZBUG

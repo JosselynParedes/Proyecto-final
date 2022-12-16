@@ -940,3 +940,7 @@
 2022-12-16 00:26:06,839 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ASUS\OneDrive\Documentos\Spring\Proyecto final\repository\college-main\src\main\resources
 2022-12-16 00:26:06,842 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2022-12-16 00:26:06,844 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ASUS\OneDrive\Documentos\Spring\Proyecto final\repository\college-main\src\test\resources
+2022-12-16 11:44:09,389 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-16 11:44:09,390 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ASUS\OneDrive\Documentos\Spring\Proyecto final\repository\college-main\src\main\resources
+2022-12-16 11:44:09,394 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-16 11:44:09,394 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ASUS\OneDrive\Documentos\Spring\Proyecto final\repository\college-main\src\test\resources

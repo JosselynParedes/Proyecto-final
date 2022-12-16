@@ -1,12 +1,12 @@
 
-„	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(·“†H;RMINORZ
-CODE_SMELL
-ƒ	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ËÚ—şÿÿÿÿ8èÅÉÂÑ0H<RMINORZ
-CODE_SMELL
-q
-java:S1118":Add a private constructor to hide the implicit public one.(ËÚ—şÿÿÿÿ8´°±ÃÑ0HMRMAJORZ
+„	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(·“†HRRMINORZ
 CODE_SMELL
 r
-java:S6437"6Revoke and change this password, as it is compromised.(’àŒµüÿÿÿÿ8´°±ÃÑ0HNRBLOCKERZVULNERABILITY
-o	java:S106"9Replace this use of System.out or System.err by a logger.(º÷àÑıÿÿÿÿ8´°±ÃÑ0HPRMAJORZ
+java:S6437"6Revoke and change this password, as it is compromised.(’àŒµüÿÿÿÿ8´°±ÃÑ0HSRBLOCKERZVULNERABILITY
+o	java:S106"9Replace this use of System.out or System.err by a logger.(º÷àÑıÿÿÿÿ8´°±ÃÑ0HQRMAJORZ
+CODE_SMELL
+ƒ	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ËÚ—şÿÿÿÿ8èÅÉÂÑ0HVRMINORZ
+CODE_SMELL
+q
+java:S1118":Add a private constructor to hide the implicit public one.(ËÚ—şÿÿÿÿ8´°±ÃÑ0HURMAJORZ
 CODE_SMELL

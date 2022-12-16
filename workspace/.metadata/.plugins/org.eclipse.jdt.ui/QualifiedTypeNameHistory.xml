@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.cybertools.collegeCBDD.collegeCBDD"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="com.mysql.cj.Query"/>
+    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+    <fullyQualifiedTypeName name="com.cybertools.collegeController.ControllerLogin"/>
+    <fullyQualifiedTypeName name="com.cybertools.collegeCBDD.collegeTest"/>
+    <fullyQualifiedTypeName name="com.cybertools.collegeCBDD.collegeCBDD"/>
+    <fullyQualifiedTypeName name="com.cybertools.collegeServlet.ServletCareers"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.http.HttpServlet"/>
+    <fullyQualifiedTypeName name="com.cybertools.collegeController.ControllerProcedures"/>
+    <fullyQualifiedTypeName name="com.cybertools.collegeController.ControllerStudents"/>
+    <fullyQualifiedTypeName name="com.cybertools.collegeController.ControllerSubjects"/>
+    <fullyQualifiedTypeName name="com.cybertools.collegeController.ControllerTeachers"/>
+    <fullyQualifiedTypeName name="com.cybertools.collegeController.Controller"/>
 </qualifiedTypeNameHistroy>
