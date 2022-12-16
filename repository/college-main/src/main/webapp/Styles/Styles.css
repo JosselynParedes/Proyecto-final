@@ -1,0 +1,102 @@
+#background{
+    background-image: url(../img/fondo.png);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    font-family: Roboto,'Open Sans';
+    position: relative;
+    padding-bottom: 3em;
+    min-height: 100vh;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #141c27 !important;
+    color: #fff
+}
+
+#barraEncabezado{
+    height: 55px;
+    background-color: #141c27 !important
+}
+
+.button {
+    position: relative;
+    overflow: hidden;
+    height: 3rem;
+    padding: 0 2rem;
+    border-radius: 1.5rem;
+    background: #3d3a4e;
+    background-size: 400%;
+    color: #fff;
+}
+
+.button:hover::before {
+    transform: scaleX(1);
+}
+
+.button-content {
+    position: relative;
+    z-index: 1;
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(
+        82.3deg,
+        rgba(150, 93, 233, 1) 10.8%,
+        rgba(99, 88, 238, 1) 94.3%
+        );
+    transition: all 0.475s;
+}
+
+#title{
+    color: #141c27;
+}
+
+table {
+    border-color: #000 !important;
+    font-weight: 500 !important;
+}
+
+thead th{
+    font-size: 18px !important;
+    font-weight: 900 !important;
+}
+
+.nav-item:hover {
+    background-color: #303446;
+}
+
+header > h1 {
+    font-weight: bold;
+}
+
+.mb-4 h1 {
+    font-weight: bold;
+}
+
+#response {
+    font-weight: bold;
+}
+
+.fixed-table-body::-webkit-scrollbar {
+    display: none;
+}
+
+.fixed-table-body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+}

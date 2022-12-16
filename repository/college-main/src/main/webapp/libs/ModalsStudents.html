@@ -1,0 +1,202 @@
+<div class="modal fade" 
+     id="insertStudents" 
+     data-bs-backdrop="static" 
+     data-bs-keyboard="false" 
+     aria-labelledby="staticBackdropLabel" 
+     aria-hidden="true">  
+    <div class="modal-dialog">    
+        <div class="modal-content">      
+            <div class="modal-header">        
+                <h4 class="modal-title" id="staticBackdropLabel">Insertar datos para el Estudiante</h4>        
+                <button type="button" class="btn-close" 
+                        data-bs-dismiss="modal" 
+                        aria-label="Close"></button>      
+            </div>      
+            <form id="insertForm" 
+                  action="students"
+                  onsubmit="doPost(event, this)" 
+                  class="modal-body">
+                <div class="mb-3 mt-3">
+                    <label for="Inui" class="form-label">C&eacutedula / NUI:</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="Inui"
+                        name="nui"
+                        required
+                        />
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="Ifirstname" class="form-label">Nombre:</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="Ifirstname"
+                        name="firstName"
+                        required
+                        />
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="IlastName" class="form-label">Apellido:</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="IlastName"
+                        name="lastName"
+                        required
+                        />
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="Iaddress" class="form-label">Direcci&oacuten: </label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="Iaddress"
+                        name="address"
+                        required
+                        />
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="ImailAddress" class="form-label">Correo: </label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="ImailAddress"
+                        name="mailAddress"
+                        required
+                        />
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="Iphone" class="form-label">Tel&eacutefono: </label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="Iphone"
+                        name="phone"
+                        required
+                        />
+                </div>
+            </form>    
+            <div class="modal-footer">        
+                <button type="button" class="btn btn-secondary" 
+                        data-bs-dismiss="modal" id="closeInsert">Cerrar</button>        
+                <button type="submit" class="btn btn-primary"
+                        form="insertForm">Insertar</button>      
+            </div>    
+        </div>  
+    </div>
+</div>
+<div
+    class="modal fade"
+    id="delete"
+    data-bs-backdrop="static"
+    data-bs-keyboard="false"
+    tabindex="-1"
+    aria-labelledby="staticBackdropLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Confirmar</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">&iquestEst&aacute seguro que desea eliminar?</div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" id="deleteBtn" 
+                        onclick="doDelete(idtoDel)">Si</button>
+                <button type="button" class="btn btn-secondary" 
+                        data-bs-dismiss="modal" id="closeDelete">No</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" 
+     id="upDate" 
+     data-bs-backdrop="static" 
+     data-bs-keyboard="false" 
+     tabindex="-1" 
+     aria-labelledby="staticBackdropLabel" 
+     aria-hidden="true">  
+    <div class="modal-dialog">    
+        <div class="modal-content">      
+            <div class="modal-header">        
+                <h4 class="modal-title" id="staticBackdropLabel">Actualizar</h4>        
+                <button type="button" class="btn-close" 
+                        data-bs-dismiss="modal" 
+                        aria-label="Close"></button>      
+            </div>      
+            <form id="upDateForm" 
+                  action="students"
+                  onsubmit="doPut(event, this)" 
+                  class="modal-body">
+                <div class="mb-3 mt-3">
+                    <label for="Unui" class="form-label">C&eacutedula / NUI:</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="Unui"
+                        name="nui"
+                        required
+                        />
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="Ufirstname" class="form-label">Nombre:</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="Ufirstname"
+                        name="firstName"
+                        required
+                        />
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="UlastName" class="form-label">Apellido:</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="UlastName"
+                        name="lastName"
+                        required
+                        />
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="Uaddress" class="form-label">Direcci&oacuten: </label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="Uaddress"
+                        name="address"
+                        required
+                        />
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="UmailAddress" class="form-label">Correo: </label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="UmailAddress"
+                        name="mailAddress"
+                        required
+                        />
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="Uphone" class="form-label">Tel&eacutefono: </label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="Uphone"
+                        name="phone"
+                        required
+                        />
+                </div>
+            </form>    
+            <div class="modal-footer">        
+                <button type="button" class="btn btn-secondary" 
+                        data-bs-dismiss="modal" id="CloseUp">Cerrar</button>        
+                <button type="submit" class="btn btn-primary"
+                        form="upDateForm">Actualizar</button>      
+            </div>    
+        </div>  
+    </div>
+</div>
+

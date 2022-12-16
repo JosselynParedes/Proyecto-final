@@ -1,0 +1,74 @@
+package com.cybertools.collegeServlet;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.List;
+
+import com.cybertools.collegeCBDD.collegeCBDD;
+
+//@author jpjar
+import com.cybertools.collegeController.DAO;
+import com.cybertools.collegeModel.ModelCareers;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
+import jakarta.servlet.annotation.MultipartConfig;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+@WebServlet(name = "CareersServlet", urlPatterns = "/careers")
+@MultipartConfig
+ 
+public class ServletCareers extends HttpServlet {
+    
+    private static final Gson objGson = new GsonBuilder().serializeNulls().create();
+    private static final DAO<ModelCareers> dao= new HttpServlet() {
+   
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        response.setContentType("application/json");
+        PrintWriter out = response.getWriter();
+        List<ModelCareers> list = dao.read();
+        String data = objGson.toJson(list);        
+        out.write(data);
+    }
+    
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        String formData = objGson.toJson(request.getParameterMap()); 
+        formData = formData.replaceAll("[\\[\\]]", ""); 
+        ModelCareers mc = objGson.fromJson(formData, ModelCareers.class);
+        boolean create = dao.create(mc);
+        if(create){
+            response.setStatus(HttpServletResponse.SC_OK);
+        }else{
+            response.sendError(HttpServletResponse.SC_CONFLICT);
+        }
+    }
+    
+    protected void doPut(HttpServletRequest request, HttpServletResponse response) throws IOException{
+        String formData = objGson.toJson(request.getParameterMap());
+        formData = formData.replaceAll("[\\[\\]]", "");
+        ModelCareers mc = objGson.fromJson(formData, ModelCareers.class);
+        boolean update = dao.update(mc);
+        if(update){
+            response.setStatus(HttpServletResponse.SC_OK);
+        }else{
+            response.sendError(HttpServletResponse.SC_CONFLICT);
+        }
+    }
+    
+    protected void doDelete(HttpServletRequest request, HttpServletResponse response) throws IOException{
+        String formData = objGson.toJson(request.getParameterMap());
+        formData = formData.replaceAll("[\\[\\]]", "");
+        ModelCareers mc = objGson.fromJson(formData, ModelCareers.class);
+        boolean del = dao.delete(mc);
+        if(del){
+            response.setStatus(HttpServletResponse.SC_OK);
+        }else{
+            response.sendError(HttpServletResponse.SC_CONFLICT);
+        }
+
+}
+}
+}

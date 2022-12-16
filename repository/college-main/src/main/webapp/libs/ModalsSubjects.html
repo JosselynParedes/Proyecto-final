@@ -1,0 +1,111 @@
+<div class="modal fade" 
+     id="insertSubjects" 
+     data-bs-backdrop="static" 
+     data-bs-keyboard="false" 
+     aria-labelledby="staticBackdropLabel" 
+     aria-hidden="true">  
+    <div class="modal-dialog">    
+        <div class="modal-content">      
+            <div class="modal-header">        
+                <h4 class="modal-title" id="staticBackdropLabel">Insertar Asignatura</h4>        
+                <button type="button" class="btn-close" 
+                        data-bs-dismiss="modal" 
+                        aria-label="Close"></button>      
+            </div>      
+            <form id="insertFormS" 
+                  action="subjects"
+                  onsubmit="doPost(event, this)" 
+                  class="modal-body">
+                <div class="mb-3 mt-3">
+                    <label for="InameSubjects" class="form-label">Nombre de la Asignatura</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="InameSubjects"
+                        name="nameSubjects"
+                        required
+                        />
+                </div>
+            </form>    
+            <div class="modal-footer">        
+                <button type="button" class="btn btn-secondary" 
+                        data-bs-dismiss="modal" id="closeInsertS">Cerrar</button>        
+                <button type="submit" class="btn btn-primary"
+                        form="insertFormS">Insertar</button>      
+            </div>    
+        </div>  
+    </div>
+</div>
+<div
+    class="modal fade"
+    id="deleteS"
+    data-bs-backdrop="static"
+    data-bs-keyboard="false"
+    tabindex="-1"
+    aria-labelledby="staticBackdropLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Confirmar</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">&iquestEst&aacute seguro que desea eliminar?</div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" id="deleteBtn" 
+                        onclick="doDeleteS(idtoDel)">Si</button>
+                <button type="button" class="btn btn-secondary" 
+                        data-bs-dismiss="modal" id="closeDeleteS">No</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" 
+     id="upDateS" 
+     data-bs-backdrop="static" 
+     data-bs-keyboard="false" 
+     tabindex="-1" 
+     aria-labelledby="staticBackdropLabel" 
+     aria-hidden="true">  
+    <div class="modal-dialog">    
+        <div class="modal-content">      
+            <div class="modal-header">        
+                <h4 class="modal-title" id="staticBackdropLabel">Actualizar</h4>        
+                <button type="button" class="btn-close" 
+                        data-bs-dismiss="modal" 
+                        aria-label="Close"></button>      
+            </div>      
+            <form id="upDateFormS" 
+                  action="subjects"
+                  onsubmit="doPut(event, this)" 
+                  class="modal-body">
+                <div class="mb-3 mt-3">
+                    <label for="UidSubjects" class="form-label">ID:</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="UidSubjects"
+                        name="idSubjects"
+                        required
+                        />
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="UnameSubjects" class="form-label">Nombre de la Asignatura</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="UnameSubjects"
+                        name="nameSubjects"
+                        required
+                        />
+                </div>
+            </form>    
+            <div class="modal-footer">        
+                <button type="button" class="btn btn-secondary" 
+                        data-bs-dismiss="modal" id="CloseUpS">Cerrar</button>        
+                <button type="submit" class="btn btn-primary"
+                        form="upDateFormS">Actualizar</button>      
+            </div>    
+        </div>  
+    </div>
+</div>

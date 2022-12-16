@@ -1,0 +1,18 @@
+
+w
+java:S1192"IDefine a constant instead of duplicating this literal "[\\[\\]]" 3 times.(δ‡ΓHRCRITICALZ
+CODE_SMELL
+‰	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¨΅‘ΊÿÿÿÿÿHRMINORZ
+CODE_SMELL
+e
+java:S1161":Add the "@Override" annotation above this method signature(½¨¤σHRMAJORZ
+CODE_SMELL
+e
+java:S1161":Add the "@Override" annotation above this method signature(°€έαHRMAJORZ
+CODE_SMELL
+e
+java:S1161)":Add the "@Override" annotation above this method signature(ΡΉ®ΞH!RMAJORZ
+CODE_SMELL
+j
+java:S11615":Add the "@Override" annotation above this method signature(Θο¥ωÿÿÿÿH#RMAJORZ
+CODE_SMELL

@@ -1,0 +1,14 @@
+package com.cybertools.collegeCBDD;
+
+import java.sql.Connection;
+
+public class collegeTest {
+	public static void main(String[] args) {
+
+        Connection conn = collegeCBDD.getConnection();
+        
+        System.out.println(conn);
+
+    }
+
+}

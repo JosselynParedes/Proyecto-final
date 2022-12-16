@@ -1,0 +1,111 @@
+<div class="modal fade" 
+     id="insertCareers" 
+     data-bs-backdrop="static" 
+     data-bs-keyboard="false" 
+     aria-labelledby="staticBackdropLabel" 
+     aria-hidden="true">  
+    <div class="modal-dialog">    
+        <div class="modal-content">      
+            <div class="modal-header">        
+                <h4 class="modal-title" id="staticBackdropLabel">Insertar Carrera</h4>        
+                <button type="button" class="btn-close" 
+                        data-bs-dismiss="modal" 
+                        aria-label="Close"></button>      
+            </div>      
+            <form id="insertForm" 
+                  action="careers"
+                  onsubmit="doPost(event, this)" 
+                  class="modal-body">
+                <div class="mb-3 mt-3">
+                    <label for="InameCareer" class="form-label">Nombre de la Carrera:</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="InameCareer"
+                        name="nameCareer"
+                        required
+                        />
+                </div>
+            </form>    
+            <div class="modal-footer">        
+                <button type="button" class="btn btn-secondary" 
+                        data-bs-dismiss="modal" id="closeInsert">Cerrar</button>        
+                <button type="submit" class="btn btn-primary"
+                        form="insertForm">Insertar</button>      
+            </div>    
+        </div>  
+    </div>
+</div>
+<div
+    class="modal fade"
+    id="delete"
+    data-bs-backdrop="static"
+    data-bs-keyboard="false"
+    tabindex="-1"
+    aria-labelledby="staticBackdropLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Confirmar</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">&iquestEst&aacute seguro que desea eliminar?</div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" id="deleteBtn" 
+                        onclick="doDeleteC(idtoDel)">Si</button>
+                <button type="button" class="btn btn-secondary" 
+                        data-bs-dismiss="modal" id="closeDelete">No</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" 
+     id="upDate" 
+     data-bs-backdrop="static" 
+     data-bs-keyboard="false" 
+     tabindex="-1" 
+     aria-labelledby="staticBackdropLabel" 
+     aria-hidden="true">  
+    <div class="modal-dialog">    
+        <div class="modal-content">      
+            <div class="modal-header">        
+                <h4 class="modal-title" id="staticBackdropLabel">Actualizar</h4>        
+                <button type="button" class="btn-close" 
+                        data-bs-dismiss="modal" 
+                        aria-label="Close"></button>      
+            </div>      
+            <form id="upDateForm" 
+                  action="careers"
+                  onsubmit="doPut(event, this)" 
+                  class="modal-body">
+                <div class="mb-3 mt-3">
+                    <label for="UidCareers" class="form-label">ID:</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="UidCareers"
+                        name="idCareers"
+                        required
+                        />
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="UnameCareer" class="form-label">Nombre de la Carrera:</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="UnameCareer"
+                        name="nameCareer"
+                        required
+                        />
+                </div>
+            </form>    
+            <div class="modal-footer">        
+                <button type="button" class="btn btn-secondary" 
+                        data-bs-dismiss="modal" id="CloseUp">Cerrar</button>        
+                <button type="submit" class="btn btn-primary"
+                        form="upDateForm">Actualizar</button>      
+            </div>    
+        </div>  
+    </div>
+</div>
